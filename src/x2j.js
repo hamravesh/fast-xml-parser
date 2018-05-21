@@ -39,7 +39,7 @@ exports.props = props;
 const getTraversalObj = function(xmlData, options) {
     options = buildOptions(options,defaultOptions,props);
     //xmlData = xmlData.replace(/\r?\n/g, " ");//make it single line
-    xmlData = xmlData.replace(/<!--[\s\S]*?-->/g, "");//Remove  comments
+    //xmlData = xmlData.replace(/<!--[\s\S]*?-->/g, "");//Remove  comments
 
     const xmlObj = new xmlNode("!xml");
     let currentNode = xmlObj;
